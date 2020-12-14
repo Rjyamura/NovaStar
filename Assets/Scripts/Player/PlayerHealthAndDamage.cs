@@ -45,7 +45,7 @@ public class PlayerHealthAndDamage : MonoBehaviour
         if (health <= 0)
         {
             this.gameObject.SetActive(false);
-            health = 5f;
+            health = 1f;
             Instantiate(_explosionAnim, transform.position, Quaternion.identity);           
         }
     }

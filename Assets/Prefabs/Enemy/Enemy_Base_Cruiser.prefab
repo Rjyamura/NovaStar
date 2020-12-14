@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d2e0f7a080ce034c8328f00199034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 1
+  _hp: 3
   _speed: 15
   _points: 200
   _explosionScale: 2.5
@@ -133,7 +133,8 @@ MonoBehaviour:
     type: 3}
   _enemyWeapon: {fileID: 4751846129131514240, guid: 8abe539fbadc6904882afb6bdf406f32,
     type: 3}
-  _powerUpPrefab: {fileID: 0}
+  _powerUpPrefab: {fileID: 4370765105008833878, guid: 7ee1b55d837403441822ed42260d9fdb,
+    type: 3}
   _weaponPos: {fileID: 1800837295739870105}
   _fireCD: 0
   _fireRate: 3
@@ -142,6 +143,8 @@ MonoBehaviour:
   _dying: 0
   _iFrameTime: 0.2
   _beamDamage: 1
+  _explosionSound: {fileID: 8300000, guid: 2945770ade5bbcf44a8453b552374fdd, type: 3}
+  _explosionVol: 0
   _stopPatternActive: 0
   _chargerActive: 0
   _randomPlacementActive: 1

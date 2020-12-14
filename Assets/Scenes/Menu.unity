@@ -6631,7 +6631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _optionsMenu: {fileID: 1952384290}
   _audioMixer: {fileID: 24100000, guid: cb710fa7482fd6f419d25a9a52c9c831, type: 2}
-  _menuMusic: {fileID: 8300000, guid: 829d2250132edb440aa5bedc1e03a815, type: 3}
+  _menuMusic: {fileID: 8300000, guid: e9a353d09cbb2f14d819aa89ad2f1967, type: 3}
   _brightness: {fileID: 512522002}
   _volumeSlider: {fileID: 189970500}
   _brightnessSlider: {fileID: 2107362309}
@@ -8605,6 +8605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844236128540820924, guid: b60d2015a8e1acd45ba33215553111b7,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60d2015a8e1acd45ba33215553111b7, type: 3}

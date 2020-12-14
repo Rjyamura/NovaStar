@@ -30,6 +30,7 @@ public class SpawnManager : MonoBehaviour
     private float waveCountdown;
     private float searchCountdown = 1f;
     private SpawnState state = SpawnState.COUNTING;
+    [SerializeField]
     private bool _checkpointReached = false;
     private bool _playerDied = false;
     private GameObject[] objectsToDestroy;
@@ -37,6 +38,8 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
+        _player = GameObject.Find("Player");
+
         if (spawnPoints.Length <= 0)
         {
             Debug.LogError("No SpawnPoints found");
@@ -46,7 +49,7 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        if (_checkpointReached && _playerDied)
+        if (_checkpointReached == true && _playerDied == true)
         {
             nextWave = 7;
             _playerDied = false;
@@ -81,6 +84,10 @@ public class SpawnManager : MonoBehaviour
                 waveCountdown -= Time.deltaTime;
             }
         }
+        if (nextWave >= 7)
+        {
+            _checkpointReached = true;
+        }
     }
     void WaveCompleted()
     {
@@ -88,6 +95,10 @@ public class SpawnManager : MonoBehaviour
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
 
+        if (nextWave >= 7)
+        {
+            _checkpointReached = true;
+        }
         if (nextWave + 1 > waves.Length - 1)
         {
             //nextWave = 0;

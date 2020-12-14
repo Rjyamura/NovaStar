@@ -163,6 +163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
+  _fireVolume: 0.3
+  _explosionAnim: {fileID: 4494989596756331637, guid: 774e7f3be1393684ea4992602b212170,
+    type: 3}
+  _hitVolume: 0.5
+  _sfxSource: {fileID: 8300000, guid: 550a1a7bc47439c4fb0f8a2c2c7e849b, type: 3}
+  _hitSfxsource: {fileID: 8300000, guid: 2945770ade5bbcf44a8453b552374fdd, type: 3}
 --- !u!54 &3864761280564768211
 Rigidbody:
   m_ObjectHideFlags: 0

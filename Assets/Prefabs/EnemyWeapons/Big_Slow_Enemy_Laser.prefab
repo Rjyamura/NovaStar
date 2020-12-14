@@ -47,6 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 15
   player: {fileID: 0}
+  _sfxSource: {fileID: 8300000, guid: e8ede44cd9967f040b6b52852fc20ae0, type: 3}
+  _hitSfxsource: {fileID: 8300000, guid: 2945770ade5bbcf44a8453b552374fdd, type: 3}
+  _explosionAnim: {fileID: 4494989596756331637, guid: 774e7f3be1393684ea4992602b212170,
+    type: 3}
+  _fireVolume: 0.8
+  _hitVolume: 0.5
 --- !u!61 &8950313566136069779
 BoxCollider2D:
   m_ObjectHideFlags: 0

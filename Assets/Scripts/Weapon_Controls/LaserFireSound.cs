@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosionAnim : MonoBehaviour
-{
-    [SerializeField] private float _animTime;
-
+public class LaserFireSound : MonoBehaviour
+{ 
     [SerializeField]
     public AudioClip _sfxSource;
 
@@ -15,13 +13,21 @@ public class ExplosionAnim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.Instance.PlayEffect(_sfxSource, _volume);
-        Destroy(gameObject, _animTime);
+        StartCoroutine(playSound());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    IEnumerator playSound()
+    {
+
+        GetComponent<AudioSource>().clip = _sfxSource;
+        GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().loop = true;
+        yield return null;
     }
 }

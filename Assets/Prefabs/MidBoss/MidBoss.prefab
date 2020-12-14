@@ -4834,7 +4834,7 @@ MonoBehaviour:
   _angleStep: -10
   _startStep: -10
   _endStep: 10
-  _speed: 0.2
+  _speed: 1
   _delay: 5
 --- !u!1 &7090471414674125929
 GameObject:
@@ -4886,7 +4886,7 @@ MonoBehaviour:
   _angleStep: 10
   _startStep: 10
   _endStep: -10
-  _speed: 0.5
+  _speed: 1
   _delay: 1
 --- !u!1 &7090471415283468622
 GameObject:
@@ -4938,7 +4938,7 @@ MonoBehaviour:
   _angleStep: -10
   _startStep: -10
   _endStep: 10
-  _speed: 0.5
+  _speed: 1
   _delay: 1
 --- !u!1 &7090471415416051735
 GameObject:
@@ -5082,6 +5082,17 @@ MonoBehaviour:
   _smoke2: {fileID: 7090471414490786697}
   _explosionPrefab: {fileID: 7571110843994879356, guid: e1df2e50500ab0146b9b8446263eddbb,
     type: 3}
+  _fightMusicSource: {fileID: 8300000, guid: aa07599b60381624bb9408696e091b23, type: 3}
+  _endMusicSource: {fileID: 8300000, guid: e1e6577f755d0294ca6e0a166c3eb471, type: 3}
+  _musicVolume: 0.6
+  _explosionSound: {fileID: 8300000, guid: 89430df8e1f8d534abec43287ed5ce2a, type: 3}
+  _explosionVol: 0.5
+  _explosionScale: 1
+  _powerUpPrefab: {fileID: 4370765105008833878, guid: 7ee1b55d837403441822ed42260d9fdb,
+    type: 3}
+  _beamHit: 0
+  _iFrameTime: 0.2
+  _beamDamage: 1
 --- !u!1001 &7090471414322171942
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -25,7 +25,7 @@ public class BigSlowEnemy : EnemyAbstractClass
     protected override void Start()
     {
         base.Start();
-        _hp = 50f;
+        _hp = 10f;
         Instantiate(_powerUpPrefab, transform.position, Quaternion.identity);
     }    
 

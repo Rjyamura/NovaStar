@@ -2,21 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosionAnim : MonoBehaviour
+public class SceneAudio : MonoBehaviour
 {
-    [SerializeField] private float _animTime;
 
     [SerializeField]
-    public AudioClip _sfxSource;
+    private AudioClip _sfxSource;
 
     [SerializeField]
-    public float _volume = 1.0f;
+    private AudioClip _musicSource;
+
+    [SerializeField]
+    private float _volume = 1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.Instance.PlayEffect(_sfxSource, _volume);
-        Destroy(gameObject, _animTime);
+        AudioManager.Instance.PlayMusic(_musicSource, _volume);
     }
 
     // Update is called once per frame

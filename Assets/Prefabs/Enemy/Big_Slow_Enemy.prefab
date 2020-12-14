@@ -144,15 +144,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d202a16996d9e3c4aba350498ea2b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 0
+  _hp: 10
   _speed: 5
-  _points: 10
-  _explosionScale: 1
+  _points: 500
+  _explosionScale: 5
   _player: {fileID: 0}
   _playerScore: {fileID: 0}
-  _explosionAnim: {fileID: 0}
+  _explosionAnim: {fileID: 4839354891253967877, guid: 4f15e8b249fbf374ca6c7b13f70f26f3,
+    type: 3}
   _enemyWeapon: {fileID: 0}
-  _powerUpPrefab: {fileID: 2859580197701695813, guid: adf28ba5baf00514e87a2418740a8214,
+  _powerUpPrefab: {fileID: 4370765105008833878, guid: 7ee1b55d837403441822ed42260d9fdb,
     type: 3}
   _weaponPos: {fileID: 6976760748338407639}
   _fireCD: 0
@@ -160,8 +161,10 @@ MonoBehaviour:
   _beamHit: 0
   _onScreen: 0
   _dying: 0
-  _iFrameTime: 0
+  _iFrameTime: 0.2
   _beamDamage: 1
+  _explosionSound: {fileID: 8300000, guid: 89430df8e1f8d534abec43287ed5ce2a, type: 3}
+  _explosionVol: 0.8
   _weaponPrefabs:
   - {fileID: 6256109815664049991, guid: bfd89dbbf142a3a468121d9c93de2d00, type: 3}
   - {fileID: 1923279561761408386, guid: 6d3ff74658c8bbb4a9ec9565ee70e3ca, type: 3}

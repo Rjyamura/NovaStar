@@ -18,7 +18,13 @@ public class LaserCharge : MonoBehaviour
     public GameObject _playerObj;
 
     [SerializeField]
-    private PlayerWeaponsFire _playerWepCtrl; 
+    private PlayerWeaponsFire _playerWepCtrl;
+
+    [SerializeField]
+    private AudioClip _chargeStartSoundClip;
+
+    [SerializeField]
+    private AudioClip _chargeLoopSoundClip;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +33,7 @@ public class LaserCharge : MonoBehaviour
         startTime = Time.time;
         _laserCharging = true;
 
-        
+        StartCoroutine(playChargeSound());
     }
 
     // Update is called once per frame
@@ -63,5 +69,15 @@ public class LaserCharge : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+
+
+    IEnumerator playChargeSound()
+    {
+ 
+        GetComponent<AudioSource>().clip = _chargeLoopSoundClip;
+        GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().loop = true;
+        yield return null;
     }
 }

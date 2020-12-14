@@ -134,9 +134,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 60
+  _hitVolume: 0.5
+  _fireVolume: 1
   _explosionAnim: {fileID: 4494989596756331637, guid: 774e7f3be1393684ea4992602b212170,
     type: 3}
   damage: 1
+  _sfxSource: {fileID: 8300000, guid: 550a1a7bc47439c4fb0f8a2c2c7e849b, type: 3}
+  _hitSfxsource: {fileID: 8300000, guid: 2945770ade5bbcf44a8453b552374fdd, type: 3}
 --- !u!65 &1150171420260775580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -329,6 +333,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 60
+  _hitVolume: 0.5
+  _fireVolume: 1
   _explosionAnim: {fileID: 4494989596756331637, guid: 774e7f3be1393684ea4992602b212170,
     type: 3}
   damage: 1
+  _sfxSource: {fileID: 8300000, guid: 550a1a7bc47439c4fb0f8a2c2c7e849b, type: 3}
+  _hitSfxsource: {fileID: 8300000, guid: 2945770ade5bbcf44a8453b552374fdd, type: 3}

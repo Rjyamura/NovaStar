@@ -146,3 +146,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 90
+  _explosionAnim: {fileID: 4494989596756331637, guid: 774e7f3be1393684ea4992602b212170,
+    type: 3}
+  _sfxSource: {fileID: 8300000, guid: e8ede44cd9967f040b6b52852fc20ae0, type: 3}
+  _hitSfxsource: {fileID: 8300000, guid: 2945770ade5bbcf44a8453b552374fdd, type: 3}
+  _fireVolume: 0.6
+  _hitVolume: 0.5

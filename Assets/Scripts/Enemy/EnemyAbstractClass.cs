@@ -34,6 +34,9 @@ public abstract class EnemyAbstractClass : MonoBehaviour
     [SerializeField] protected float _iFrameTime = 0.2f;
     [SerializeField] protected float _beamDamage = 1.0f;
 
+    [SerializeField] private AudioClip _explosionSound;
+    [SerializeField] private float _explosionVol;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -42,9 +45,13 @@ public abstract class EnemyAbstractClass : MonoBehaviour
 
         _player = GameObject.Find("Player");
 
-        _playerScore = _player.GetComponent<PlayerScore>();
+        if (_player != null)
+        {
+            _playerScore = _player.GetComponent<PlayerScore>();
+        }
 
         PowerUp();
+
     }
 
     // Update is called once per frame
@@ -82,11 +89,17 @@ public abstract class EnemyAbstractClass : MonoBehaviour
             _playerScore.AddScore(_points);
             Debug.Log("Enemy Destroyed");
 
+            PowerUp();
 
             if (_explosionAnim != null)
             {
                 Debug.Log("Explosion");
+
                 GameObject explosion = Instantiate(_explosionAnim, transform.position, Quaternion.identity);
+
+                explosion.gameObject.GetComponent<ExplosionAnim>()._sfxSource = _explosionSound;
+                explosion.gameObject.GetComponent<ExplosionAnim>()._volume = _explosionVol;
+
                 explosion.transform.localScale = new Vector3(_explosionScale, _explosionScale, _explosionScale);
 
             }

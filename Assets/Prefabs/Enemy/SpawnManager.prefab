@@ -45,13 +45,138 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyContainer: {fileID: 0}
   waves:
-  - name: Poop
+  - name: 'Wave 1 '
     enemy:
     - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
-    count: 2
-    rate: 3
+    count: 5
+    rate: 1
     _waveAnim: {fileID: 0}
+  - name: Wave 2
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    count: 10
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 3
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    count: 15
+    rate: 2
+    _waveAnim: {fileID: 4549966884394764580, guid: 4fd8d160280626c47baa1ad514619b03,
+      type: 3}
+  - name: Wave 4
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    count: 10
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 5
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    count: 10
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 6
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    count: 15
+    rate: 2
+    _waveAnim: {fileID: 1348685544273863417, guid: 893efdf2671dbba4f849a76917a603c3,
+      type: 3}
+  - name: Wave 7
+    enemy:
+    - {fileID: 7090471415415620663, guid: c90285444bab2684c88ce6fa8cdb0c62, type: 3}
+    count: 1
+    rate: 1
+    _waveAnim: {fileID: 0}
+  - name: Wave 8
+    enemy:
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    count: 5
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 9
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    count: 10
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 10
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    count: 15
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 11
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    count: 20
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 12
+    enemy:
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    count: 10
+    rate: 5
+    _waveAnim: {fileID: 4302879630255651046, guid: 103ebb2595186d147b8cc73f957a4f78,
+      type: 3}
+  - name: Wave 13
+    enemy:
+    - {fileID: 7090471415415620663, guid: c90285444bab2684c88ce6fa8cdb0c62, type: 3}
+    count: 2
+    rate: 1
+    _waveAnim: {fileID: 0}
+  - name: Wave 14
+    enemy:
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    - {fileID: 5925815399817429637, guid: 69ad86e43afd6e14caf1537e71648a57, type: 3}
+    count: 15
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 15
+    enemy:
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    - {fileID: 5925815399817429637, guid: 69ad86e43afd6e14caf1537e71648a57, type: 3}
+    count: 20
+    rate: 2
+    _waveAnim: {fileID: 0}
+  - name: Wave 16
+    enemy:
+    - {fileID: 2713658611427233250, guid: 64255af2415cc3748b24f10fab93c976, type: 3}
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 1800837295739870105, guid: 97043559fa2de64479712cdf42244cbd, type: 3}
+    - {fileID: 5925815399817429637, guid: 69ad86e43afd6e14caf1537e71648a57, type: 3}
+    count: 15
+    rate: 5
+    _waveAnim: {fileID: 1081116544371117888, guid: e0ee82493790c9f478fb184840710174,
+      type: 3}
+  - name: Wave 17
+    enemy:
+    - {fileID: 1800837295739870105, guid: a2f2660a1946ad647b701ed9ab9581a2, type: 3}
+    - {fileID: 5925815399817429637, guid: 69ad86e43afd6e14caf1537e71648a57, type: 3}
+    count: 15
+    rate: 5
+    _waveAnim: {fileID: 3649050723600265515, guid: 1a341dbc02952a2459512eae3628cb08,
+      type: 3}
   spawnPoints:
   - {fileID: 0}
   timeBetweenWaves: 5
-  nextWave: 3
+  nextWave: 0
+  _checkpointReached: 0

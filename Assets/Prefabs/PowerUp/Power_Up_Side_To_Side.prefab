@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 145371488637040153}
   - component: {fileID: 2312653644692910279}
   - component: {fileID: 8096695661643502646}
+  - component: {fileID: -7135237632354940098}
   m_Layer: 0
   m_Name: Power_Up_Side_To_Side
   m_TagString: PowerUp
@@ -82,6 +83,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-7135237632354940098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4391417300127363874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2595db7e355939449bb351259305e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
+  _clip: {fileID: 0}
 --- !u!1 &4544987536331519871
 GameObject:
   m_ObjectHideFlags: 0

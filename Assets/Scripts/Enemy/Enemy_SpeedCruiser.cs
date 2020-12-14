@@ -32,9 +32,18 @@ public class Enemy_SpeedCruiser : EnemyAbstractClass
     // Start is called before the first frame update
     protected override void Start()
     {
-        _player = GameObject.Find("Player");
+        base.Start();
 
-        _playerScore = _player.GetComponent<PlayerScore>();
+        if (_randomPlacementActive)
+        {
+            newPos = Random.Range(-16f, 16f);
+        }
+        else
+        {
+            newPos = transform.position.y;
+        }
+
+        transform.position = new Vector3(40.0f, newPos, 0);
 
 
         _stopTime = Random.Range(0.3f, 0.5f);
@@ -56,6 +65,7 @@ public class Enemy_SpeedCruiser : EnemyAbstractClass
     // Update is called once per frame
     protected override void Update()
     {
+        base.Update();
         OnScreenCheck();
         Movement();
 

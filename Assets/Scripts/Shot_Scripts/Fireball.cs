@@ -7,6 +7,12 @@ public class Fireball : MonoBehaviour
     [SerializeField]
     private float _speed = 60.0f;
 
+    [SerializeField]
+    private float _hitVolume = 1.0f;
+
+    [SerializeField]
+    private float _fireVolume = 1.0f;
+
     private bool _isEnemyShot = false;
 
     [SerializeField] protected GameObject _explosionAnim;
@@ -14,9 +20,19 @@ public class Fireball : MonoBehaviour
     [SerializeField]
     private float damage;
 
+    [SerializeField]
+    private AudioClip _sfxSource;
+
+    [SerializeField]
+    private AudioClip _hitSfxsource;
+
     // Start is called before the first frame update
     void Start()
     {
+        if(_sfxSource != null)
+        {
+            AudioManager.Instance.PlayEffect(_sfxSource, _fireVolume);
+        }
         
     }
 
@@ -80,7 +96,11 @@ public class Fireball : MonoBehaviour
 
                 if(_explosionAnim != null)
                 {
-                    Instantiate(_explosionAnim, transform.position, Quaternion.identity);
+
+                    GameObject explosion  = Instantiate(_explosionAnim, transform.position, Quaternion.identity);
+                    explosion.gameObject.GetComponent<ExplosionAnim>()._sfxSource = _hitSfxsource;
+                    explosion.gameObject.GetComponent<ExplosionAnim>()._volume = _hitVolume;
+
                 }
                
             }

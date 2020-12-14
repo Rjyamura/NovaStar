@@ -149,7 +149,7 @@ MonoBehaviour:
   _explosionAnim: {fileID: 4839354891253967877, guid: 4f15e8b249fbf374ca6c7b13f70f26f3,
     type: 3}
   _enemyWeapon: {fileID: 0}
-  _powerUpPrefab: {fileID: 2859580197701695813, guid: adf28ba5baf00514e87a2418740a8214,
+  _powerUpPrefab: {fileID: 4370765105008833878, guid: 7ee1b55d837403441822ed42260d9fdb,
     type: 3}
   _weaponPos: {fileID: 0}
   _fireCD: 0
@@ -159,6 +159,8 @@ MonoBehaviour:
   _dying: 0
   _iFrameTime: 0
   _beamDamage: 1
+  _explosionSound: {fileID: 8300000, guid: 2945770ade5bbcf44a8453b552374fdd, type: 3}
+  _explosionVol: 0.5
   _distCharge: 15
   _target: {fileID: 0}
   _distDelta: 20

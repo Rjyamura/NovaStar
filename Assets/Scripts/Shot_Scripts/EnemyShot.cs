@@ -9,10 +9,24 @@ public class EnemyShot : MonoBehaviour
 
     private bool _isEnemyLaser = false;
 
+    [SerializeField] protected GameObject _explosionAnim;
+
+    [SerializeField]
+    private AudioClip _sfxSource;
+
+    [SerializeField]
+    private AudioClip _hitSfxsource;
+
+    [SerializeField]
+    private float _fireVolume = 1.0f;
+
+    [SerializeField]
+    private float _hitVolume = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        AudioManager.Instance.PlayEffect(_sfxSource, _fireVolume);
     }
 
     // Update is called once per frame
@@ -46,6 +60,17 @@ public class EnemyShot : MonoBehaviour
             if(player != null)
             {
                 player.PlayerDamage();
+
+                if (_explosionAnim != null)
+                {
+
+                    GameObject explosion = Instantiate(_explosionAnim, transform.position, Quaternion.identity);
+                    explosion.gameObject.GetComponent<ExplosionAnim>()._sfxSource = _hitSfxsource;
+                    explosion.gameObject.GetComponent<ExplosionAnim>()._volume = _hitVolume;
+
+                }
+
+                Destroy(gameObject);
             }
         }
     }

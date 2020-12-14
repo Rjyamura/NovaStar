@@ -6,8 +6,8 @@ public class FinalBoss : MonoBehaviour
 {
     //1st attack pattern
     //Boss turn red and fires charged beam
-    [SerializeField] private int _maxHp = 100;
-    [SerializeField] private int _curHp;
+    [SerializeField] private float _maxHp = 100;
+    [SerializeField] private float _curHp;
 
     //base movement
     [SerializeField] private float _speed = 4.0f;
@@ -61,7 +61,7 @@ public class FinalBoss : MonoBehaviour
     {
         //assigning current hp
         _curHp = _maxHp;
-
+        transform.Rotate(new Vector3(0, 270, 0));
         _anim = GetComponent<Animator>();
         if (_anim == null)
         {
@@ -259,5 +259,23 @@ public class FinalBoss : MonoBehaviour
                 Instantiate(_bombPrefab, _curBombSpawn.position, Quaternion.identity);
             }            
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Damage(1f);
+        }
+        if (other.CompareTag("Fireball"))
+        {
+            Damage(1f);
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void Damage(float _damage)
+    {
+        _curHp -= _damage;
     }
 }
